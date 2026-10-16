@@ -31,6 +31,8 @@ nav a:hover { color: var(--deep-red); }
 
 .hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(330px, 0.75fr); border-bottom: 2px solid var(--line); }
 .hero-red { min-height: 650px; display: flex; flex-direction: column; justify-content: space-between; padding: 34px clamp(28px, 5vw, 62px) 38px; color: var(--cream); background: var(--red); border-right: 2px solid var(--line); }
+.hero-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; }
+.profile-photo { display: block; flex-shrink: 0; width: 168px; height: 168px; object-fit: cover; border: 2px solid var(--cream); }
 .hero-index, .eyebrow, .section-label > span, .paper-meta, .media-index, .media-link, .affiliation > span, .contact p {
   margin: 0; font-size: 11px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
 }
@@ -142,6 +144,7 @@ footer p { margin: 0; }
   nav { font-size: 12px; }
   .hero-red, .hero-cream { padding-inline: 22px; }
   .hero-copy h1 { font-size: 70px; }
+  .profile-photo { width: 132px; height: 132px; }
   .intro { margin-bottom: 36px; }
   .color-rail { margin-inline: -22px; }
   .section { padding: 64px 0; }
