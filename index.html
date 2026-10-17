@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jianfeng Lin">
     <meta name="description" content="Jianfeng Lin is a PhD student at Georgia Tech studying robophysics, physical intelligence, biomechanics, and bio-inspired robotics.">
-    <meta name="theme-color" content="#D92C2D">
+    <meta name="theme-color" content="#FFFAF0">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jianflin.github.io/">
     <meta property="og:title" content="Jianfeng Lin — Robophysics &amp; Bio-inspired Robotics">
@@ -20,7 +20,8 @@
     <title>Jianfeng Lin — Robophysics &amp; Bio-inspired Robotics</title>
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
-    <link rel="stylesheet" href="stylesheet.css?v=20261016-headshot">
+    <link rel="preload" href="fonts/newsreader-variable.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="stylesheet.css?v=20261017-navy-rules">
   </head>
 
   <body>
@@ -29,7 +30,7 @@
     <header class="site-header">
       <a class="wordmark" href="#top">Jianfeng Lin</a>
       <nav aria-label="Primary navigation">
-        <a href="#research">Research</a>
+        <a href="#highlight">Highlights</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
         <a href="data/Jianfeng_CV.pdf">CV ↗</a>
@@ -38,15 +39,12 @@
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-red">
-          <div class="hero-heading">
-            <p class="hero-index">01 / About</p>
-            <img class="profile-photo" src="images/jianfeng-lin-headshot.jpg" alt="Jianfeng Lin" width="1000" height="1000" decoding="async">
-          </div>
-          <div class="hero-copy">
+        <div class="hero-profile">
+          <img class="profile-photo" src="images/jianfeng-lin-headshot.jpg" alt="Jianfeng Lin" width="1000" height="1000" decoding="async">
+          <div class="profile-details">
+            <h1 id="hero-title">Jianfeng Lin</h1>
             <p class="eyebrow">PhD student · Georgia Tech</p>
-            <h1 id="hero-title">Jianfeng<br>Lin</h1>
-            <p class="hero-role">Robophysics · Physical Intelligence · Biomechanics</p>
+            <p class="hero-role">Biomechanics, Neuromechanics, Robophysics, Robotics</p>
           </div>
           <div class="hero-links" aria-label="Contact and profiles">
             <a href="mailto:jianf.lin@gatech.edu">Email</a>
@@ -56,52 +54,61 @@
           </div>
         </div>
 
-        <div class="hero-cream">
-          <span class="accent-star" aria-hidden="true">✦</span>
-          <p class="intro">
-            I am a PhD student in <a href="https://qbios.gatech.edu/">Quantitative Biosciences</a> at
-            <a href="https://www.gatech.edu/">Georgia Tech</a>, advised by Daniel I. Goldman. I study how
-            body mechanics, control, and environmental interactions shape robot locomotion.
-          </p>
+        <div class="hero-introduction">
+          <h2 class="section-title intro-heading">Introduction <span class="intro-star" aria-hidden="true">✦</span></h2>
+          <div class="intro-copy">
+            <p class="intro">
+              I received my B.Eng. in Mechanical Engineering from Wuhan University in Wuhan, China, in 2023.
+              I am currently pursuing a PhD in <a href="https://qbios.gatech.edu/">Quantitative Biosciences</a>
+              at <a href="https://www.gatech.edu/">Georgia Tech</a> in Atlanta, USA, advised by Daniel I. Goldman.
+            </p>
+            <p class="intro">
+              In 2022, I was a research intern in the <a href="https://dlg.is.mpg.de/">Dynamic Locomotion Group</a>
+              at the Max Planck Institute for Intelligent Systems (MPI-IS) in Stuttgart, Germany.
+              My research interests include biomechanics and biorobotics. I am a Graduate Student Member of IEEE.
+            </p>
+          </div>
           <div class="affiliation">
             <span>Current</span>
             <strong><a href="https://crablab.gatech.edu/">Complex Rheology &amp; Biomechanics Lab ↗</a></strong>
             <p>Graduate Research Assistant · Atlanta, Georgia</p>
           </div>
-          <div class="color-rail" aria-hidden="true">
-            <span class="rail-coral"></span><span class="rail-orange"></span>
-            <span class="rail-cream"></span><span class="rail-lime"></span>
-          </div>
         </div>
       </section>
 
-      <section class="section" id="research" aria-labelledby="research-title">
-        <div class="section-label"><span>02 / Research</span><h2 id="research-title">Research directions</h2></div>
-        <div class="section-body">
-          <div class="topic-list">
-            <article>
-              <span class="topic-number">01</span>
-              <h3>Compliant<br>locomotion</h3>
-              <p>Body elasticity, passive dynamics, and swimming in overdamped media.</p>
-            </article>
-            <article>
-              <span class="topic-number">02</span>
-              <h3>Robust<br>control</h3>
-              <p>Feedback and geometric approaches for multi-legged robots on uncertain terrain.</p>
-            </article>
-            <article>
-              <span class="topic-number">03</span>
-              <h3>Bio-inspired<br>design</h3>
-              <p>Soft actuators and tendon-coupled mechanisms based on biological systems.</p>
-            </article>
+      <section class="section" id="highlight" aria-labelledby="highlight-title">
+        <div class="section-label"><h2 class="section-title" id="highlight-title">Highlights</h2></div>
+        <!--
+          Layout: 2 rows x 3 columns. Each tile sets --rows and --columns.
+          Current example: 2x2 video + 2x1 reserved tile (rows x columns).
+          Other layouts: six 1x1 tiles, three 2x1 tiles, or one 2x3 tile.
+          Duplicate a figure to add a video; give its caption a unique ID.
+          Add the hidden attribute to any unused tile to remove it from layout.
+        -->
+        <div class="highlight-grid">
+          <figure class="highlight-tile highlight-feature" style="--rows: 2; --columns: 2;">
+            <a class="highlight-video-link" href="https://ieeexplore.ieee.org/document/11128691" aria-label="View paper: Bird-inspired tendon coupling">
+              <video class="highlight-video" autoplay muted loop playsinline preload="auto" aria-label="Bird-inspired tendon coupling research video" aria-describedby="highlight-caption">
+                <source src="videos/bird-inspired-tendon-coupling.mp4" type="video/mp4">
+                View the Bird-inspired tendon coupling paper.
+              </video>
+            </a>
+            <figcaption id="highlight-caption">
+              <a href="https://ieeexplore.ieee.org/document/11128691">Bird-inspired tendon coupling</a>
+            </figcaption>
+          </figure>
+          <!-- Replace this reserved tile with another video figure when ready. -->
+          <div class="highlight-tile highlight-placeholder" style="--rows: 2; --columns: 1;" aria-label="Reserved space for a second highlight video">
+            <span>Video 02</span>
+            <p>Reserved video space</p>
+            <small>2 rows × 1 column</small>
           </div>
         </div>
       </section>
 
       <section class="section" id="publications" aria-labelledby="publications-title">
         <div class="section-label">
-          <span>03 / Selected work</span>
-          <h2 id="publications-title">Publications</h2>
+          <h2 class="section-title" id="publications-title">Publications</h2>
           <p>† Equal contribution</p>
         </div>
         <div class="section-body paper-list">
@@ -168,7 +175,7 @@
       </section>
 
       <section class="section" id="experience" aria-labelledby="experience-title">
-        <div class="section-label"><span>04 / Experience</span><h2 id="experience-title">Experience</h2></div>
+        <div class="section-label"><h2 class="section-title" id="experience-title">Experience</h2></div>
         <div class="section-body row-list">
           <article><time>2024 — present</time><div><h3>Graduate Research Assistant</h3><p><a href="https://crablab.gatech.edu/">Complex Rheology and Biomechanics Lab</a> · Georgia Tech</p><p>Advisor: Daniel I. Goldman</p></div></article>
           <article><time>2023 — 2026</time><div><h3>Graduate Teaching Assistant</h3><p>School of Physics · Georgia Tech</p><p>PHYS 2211 — Introductory Physics I</p></div></article>
@@ -178,7 +185,7 @@
       </section>
 
       <section class="section" id="recognition" aria-labelledby="recognition-title">
-        <div class="section-label"><span>05 / Recognition</span><h2 id="recognition-title">Honors &amp; service</h2></div>
+        <div class="section-label"><h2 class="section-title" id="recognition-title">Recognition</h2></div>
         <div class="section-body recognition-grid">
           <div>
             <h3>Selected honors</h3>
@@ -200,7 +207,7 @@
       </section>
 
       <section class="contact" aria-labelledby="contact-title">
-        <div><p>06 / Contact</p><h2 id="contact-title">jianf.lin@gatech.edu</h2></div>
+        <div><h2 class="section-title" id="contact-title">Contact</h2><p class="contact-email">jianf.lin@gatech.edu</p></div>
         <a href="mailto:jianf.lin@gatech.edu">Send an email ↗</a>
       </section>
     </main>
@@ -209,5 +216,15 @@
       <p>© 2026 Jianfeng Lin</p>
       <p>Last updated October 2026 · Atlanta, GA</p>
     </footer>
+    <script>
+      // Keep playback optional for visitors who prefer reduced motion.
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('.highlight-video').forEach((video) => {
+          video.autoplay = false;
+          video.controls = true;
+          video.pause();
+        });
+      }
+    </script>
   </body>
 </html>
