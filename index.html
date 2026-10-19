@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jianfeng Lin">
-    <meta name="description" content="Jianfeng Lin is a PhD student at Georgia Tech studying robophysics, physical intelligence, biomechanics, and bio-inspired robotics.">
+    <meta name="description" content="Jianfeng Lin is a PhD candidate at Georgia Tech studying robophysics, physical intelligence, biomechanics, and bio-inspired robotics.">
     <meta name="theme-color" content="#FFFAF0">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jianflin.github.io/">
@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
     <link rel="preload" href="fonts/newsreader-variable.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="stylesheet.css?v=20261017-navy-rules">
+  <link rel="stylesheet" href="stylesheet.css?v=20261018-restored-spacing">
   </head>
 
   <body>
@@ -33,7 +33,7 @@
         <a href="#highlight">Highlights</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
-        <a href="data/Jianfeng_CV.pdf">CV ↗</a>
+        <a href="data/Jianfeng_CV.pdf">CV</a>
       </nav>
     </header>
 
@@ -43,7 +43,7 @@
           <img class="profile-photo" src="images/jianfeng-lin-headshot.jpg" alt="Jianfeng Lin" width="1000" height="1000" decoding="async">
           <div class="profile-details">
             <h1 id="hero-title">Jianfeng Lin</h1>
-            <p class="eyebrow">PhD student · Georgia Tech</p>
+            <p class="eyebrow">PhD candidate · Georgia Tech</p>
             <p class="hero-role">Biomechanics, Neuromechanics, Robophysics, Robotics</p>
           </div>
           <div class="hero-links" aria-label="Contact and profiles">
@@ -58,19 +58,21 @@
           <h2 class="section-title intro-heading">Introduction <span class="intro-star" aria-hidden="true">✦</span></h2>
           <div class="intro-copy">
             <p class="intro">
-              I received my B.Eng. in Mechanical Engineering from Wuhan University in Wuhan, China, in 2023.
-              I am currently pursuing a PhD in <a href="https://qbios.gatech.edu/">Quantitative Biosciences</a>
-              at <a href="https://www.gatech.edu/">Georgia Tech</a> in Atlanta, USA, advised by Daniel I. Goldman.
+              I am currently a Ph.D. candidate in <a href="https://qbios.gatech.edu/">Quantitative Biosciences</a>
+              at the Georgia Institute of Technology in Atlanta, USA, advised by <a href="https://crablab.gatech.edu/">Prof. Daniel I. Goldman</a>.
+              I received my B.Eng. in Mechanical Engineering from Wuhan University, China, in 2023.
             </p>
             <p class="intro">
-              In 2022, I was a research intern in the <a href="https://dlg.is.mpg.de/">Dynamic Locomotion Group</a>
-              at the Max Planck Institute for Intelligent Systems (MPI-IS) in Stuttgart, Germany.
-              My research interests include biomechanics and biorobotics. I am a Graduate Student Member of IEEE.
+              In 2022, I was a research intern with the <a href="https://is.mpg.de/dlg/person/sprowitz">Dynamic Locomotion Group</a>
+              at the Max Planck Institute for Intelligent Systems (MPI-IS) in Stuttgart, Germany, advised by <a href="https://scholar.google.com/citations?user=JCHb-YMAAAAJ&amp;hl=en">Alexander Badri-Spröwitz</a>.
+            </p>
+            <p class="intro">
+              I use robots to explore fundamental questions in biomechanics and neuroscience and discover new principles for robot design and control.
             </p>
           </div>
           <div class="affiliation">
             <span>Current</span>
-            <strong><a href="https://crablab.gatech.edu/">Complex Rheology &amp; Biomechanics Lab ↗</a></strong>
+            <strong><a href="https://crablab.gatech.edu/">Complex Rheology &amp; Biomechanics Lab</a></strong>
             <p>Graduate Research Assistant · Atlanta, Georgia</p>
           </div>
         </div>
@@ -87,22 +89,27 @@
         -->
         <div class="highlight-grid">
           <figure class="highlight-tile highlight-feature" style="--rows: 2; --columns: 2;">
-            <a class="highlight-video-link" href="https://ieeexplore.ieee.org/document/11128691" aria-label="View paper: Bird-inspired tendon coupling">
-              <video class="highlight-video" autoplay muted loop playsinline preload="auto" aria-label="Bird-inspired tendon coupling research video" aria-describedby="highlight-caption">
-                <source src="videos/bird-inspired-tendon-coupling.mp4" type="video/mp4">
-                View the Bird-inspired tendon coupling paper.
+            <a class="highlight-video-link" href="https://arxiv.org/abs/2510.03457" aria-label="View arXiv paper: Optimal swimming with body compliance in an overdamped medium">
+              <video class="highlight-video" autoplay muted loop playsinline preload="none" aria-label="Compliant undulatory swimming research summary" aria-describedby="highlight-caption">
+                <source data-src="videos/compliant-swimming-summary.mp4" type="video/mp4">
+                View the compliant swimming paper on arXiv.
               </video>
             </a>
             <figcaption id="highlight-caption">
-              <a href="https://ieeexplore.ieee.org/document/11128691">Bird-inspired tendon coupling</a>
+              <a href="https://arxiv.org/abs/2510.03457">Geometric modeling for compliant undulators</a>
             </figcaption>
           </figure>
-          <!-- Replace this reserved tile with another video figure when ready. -->
-          <div class="highlight-tile highlight-placeholder" style="--rows: 2; --columns: 1;" aria-label="Reserved space for a second highlight video">
-            <span>Video 02</span>
-            <p>Reserved video space</p>
-            <small>2 rows × 1 column</small>
-          </div>
+          <figure class="highlight-tile highlight-feature highlight-feature-vertical" style="--rows: 2; --columns: 1;">
+            <a class="highlight-video-link" href="https://ieeexplore.ieee.org/document/11128691" aria-label="View paper: Bird-inspired tendon coupling">
+              <video class="highlight-video" autoplay muted loop playsinline preload="none" aria-label="Tendon coupling mechanism" aria-describedby="highlight-tendon-caption">
+                <source data-src="videos/duckleg-preview-vertical.mp4?v=20261018-2" type="video/mp4">
+                View the bird-inspired tendon coupling paper.
+              </video>
+            </a>
+            <figcaption id="highlight-tendon-caption">
+              <a href="https://ieeexplore.ieee.org/document/11128691">Tendon coupling mechanism</a>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -113,102 +120,99 @@
         </div>
         <div class="section-body paper-list">
           <article class="paper">
-            <!-- VIDEO SLOT: replace this div with a video element when the MP4 is ready. -->
-            <div class="paper-media media-blue" aria-label="Reserved video space for the compliant swimming paper">
-              <span class="media-index">Video 01</span>
-              <span class="media-keyword">Future paper video</span>
-              <span class="media-link">Reserved video space</span>
-            </div>
+            <a class="paper-media" href="https://journals.aps.org/prapplied/abstract/10.1103/pbkh-py5h" aria-label="View paper: Optimal swimming with body compliance in an overdamped medium">
+              <img src="images/publications/compliant-swimming.png" alt="Cable-driven compliant swimming robot and schematic showing its passive joints and body coordinates" width="759" height="618" loading="lazy" decoding="async">
+            </a>
             <div class="paper-copy">
               <div class="paper-meta"><span>Physical Review Applied</span><time>2026</time></div>
               <h3><a href="https://journals.aps.org/prapplied/abstract/10.1103/pbkh-py5h">Optimal swimming with body compliance in an overdamped medium</a></h3>
               <p class="authors"><strong>Jianfeng Lin†</strong>, Tianyu Wang†, Baxi Chong, Matthew Fernandez, Zhaochen Xu, Daniel I. Goldman</p>
-              <p>Optimal elasticity can improve swimming performance even when inertia is negligible.</p>
-              <div class="paper-links"><a href="https://journals.aps.org/prapplied/abstract/10.1103/pbkh-py5h">Paper ↗</a><a href="https://arxiv.org/abs/2510.03457">arXiv ↗</a></div>
-            </div>
-          </article>
-
-          <article class="paper reverse">
-            <!-- VIDEO SLOT: replace this div with a video element when the MP4 is ready. -->
-            <div class="paper-media media-red" aria-label="Reserved video space for the tendon coupling paper">
-              <span class="media-index">Video 02</span>
-              <span class="media-keyword">Future paper video</span>
-              <span class="media-link">Reserved video space</span>
-            </div>
-            <div class="paper-copy">
-              <div class="paper-meta"><span>IEEE ICRA · Best Design Award</span><time>2025</time></div>
-              <h3><a href="https://ieeexplore.ieee.org/document/11128691">Bird-inspired tendon coupling improves paddling efficiency by shortening phase transition times</a></h3>
-              <p class="authors"><strong>Jianfeng Lin</strong>, Zhao Guo, Alexander Badri-Spröwitz</p>
-              <p>A bird-inspired tendon mechanism enables faster and more efficient paddling transitions.</p>
-              <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/11128691">Paper ↗</a><a href="https://arxiv.org/abs/2409.14707">arXiv ↗</a></div>
+              <p>Using geometric mechanics to control a compliant undulatory robot for efficient swimming.</p>
+              <div class="paper-links"><a href="https://journals.aps.org/prapplied/abstract/10.1103/pbkh-py5h">Paper</a><a href="https://arxiv.org/abs/2510.03457">arXiv</a><a href="https://youtu.be/ubmdbTrDMfQ?si=BF1lYpDqjEISxwBE">Video</a></div>
             </div>
           </article>
 
           <article class="paper">
-            <!-- VIDEO SLOT: replace this div with a video element when the MP4 is ready. -->
-            <div class="paper-media media-blue" aria-label="Reserved video space for the soft actuator paper">
-              <span class="media-index">Video 03</span>
-              <span class="media-keyword">Future paper video</span>
-              <span class="media-link">Reserved video space</span>
-            </div>
+            <a class="paper-media paper-preview" href="https://ieeexplore.ieee.org/document/11128691" aria-label="View paper: Bird-inspired tendon coupling">
+              <video class="publication-video" autoplay muted loop playsinline preload="none" aria-label="Bird-inspired tendon coupling demonstration">
+                <source data-src="videos/duckleg-preview.mp4" type="video/mp4">
+                Bird-inspired tendon coupling demonstration.
+              </video>
+            </a>
             <div class="paper-copy">
-              <div class="paper-meta"><span>Soft Robotics</span><time>2024</time></div>
-              <h3><a href="https://journals.sagepub.com/doi/10.1089/soro.2022.0212">Bioinspired bidirectional stiffening soft actuators enable versatile and robust grasping</a></h3>
-              <p class="authors"><strong>Jianfeng Lin</strong>, Jiawei Ke, Ruike Xiao, Xi Jiang, Ming Li, Xiang Xiao, Zhao Guo</p>
-              <p>A soft actuator combines bending and lateral stiffness control for versatile grasping.</p>
-              <div class="paper-links"><a href="https://journals.sagepub.com/doi/10.1089/soro.2022.0212">Paper + supplementary videos ↗</a></div>
+              <div class="paper-meta"><span class="selected-badge">Selected</span><span>IEEE ICRA · Workshop Best Design Award</span><time>2025</time></div>
+              <h3><a href="https://ieeexplore.ieee.org/document/11128691">Bird-inspired tendon coupling improves paddling efficiency by shortening phase transition times</a></h3>
+              <p class="authors"><strong>Jianfeng Lin</strong>, Zhao Guo, Alexander Badri-Spröwitz</p>
+              <p>A bird-inspired tendon mechanism enables faster and more efficient paddling transitions.</p>
+              <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/11128691">Paper</a><a href="https://arxiv.org/abs/2409.14707">arXiv</a><a href="https://youtu.be/lUU3LwMy6AM?si=hW1RDANPI2PHEFmL">Video</a></div>
             </div>
           </article>
 
-          <details class="more-publications">
-            <summary>More publications <span aria-hidden="true">+</span></summary>
-            <div class="compact-list">
-              <article><span>2025 · IEEE T-RO</span><h3><a href="https://arxiv.org/abs/2411.07183">Probabilistic approach to feedback control enhances multi-legged locomotion on rugged landscapes ↗</a></h3><p>Juncen He, Baxi Chong, <strong>Jianfeng Lin</strong>, et al.</p></article>
-              <article><span>2025 · ICRA</span><h3><a href="https://ieeexplore.ieee.org/document/11127656">Addition of a peristaltic wave improves multi-legged locomotion performance on complex terrains ↗</a></h3><p>Matteo Iaschi, Baxi Chong, Tianyu Wang, <strong>Jianfeng Lin</strong>, et al.</p></article>
-              <article><span>2023 · IROS</span><h3><a href="https://ieeexplore.ieee.org/abstract/document/10341730">Design and stiffness analysis of a bio-inspired soft actuator with bi-direction tunable stiffness property ↗</a></h3><p><strong>Jianfeng Lin</strong>, Ruike Xiao, Zhao Guo</p></article>
-              <article><span>In submission</span><h3><a href="https://arxiv.org/abs/2603.07795">A robust antenna provides tactile feedback in a multi-legged robot ↗</a></h3><p>Zhihao Xu, Juncen He, Dilara Aydan, et al., <strong>Jianfeng Lin</strong>, et al.</p></article>
-              <article><span>In submission</span><h3><a href="https://arxiv.org/abs/2510.03457">The Omega Turn: A general turning template for elongate robots ↗</a></h3><p>Baxi Chong†, Tianyu Wang†, et al., <strong>Jianfeng Lin</strong>, et al.</p></article>
-              <article><span>In submission</span><h3><a href="https://arxiv.org/pdf/2506.15788">Robust control for multi-legged elongate robots in noisy environments ↗</a></h3><p>Baxi Chong, Juncen He, et al., <strong>Jianfeng Lin</strong>, et al.</p></article>
+          <article class="paper">
+            <a class="paper-media" href="https://doi.org/10.1109/TRO.2025.3593133" aria-label="View paper: Probabilistic approach to feedback control enhances multi-legged locomotion on rugged landscapes">
+              <img src="images/publications/tro-field-experiments.png" alt="Multi-legged robot traversing grass, rocks, uneven outdoor terrain, and laboratory obstacles" width="1001" height="459" loading="lazy" decoding="async">
+            </a>
+            <div class="paper-copy">
+              <div class="paper-meta"><span>IEEE Transactions on Robotics</span><time datetime="2025">2025</time></div>
+              <h3><a href="https://doi.org/10.1109/TRO.2025.3593133">Probabilistic approach to feedback control enhances multi-legged locomotion on rugged landscapes</a></h3>
+              <p class="authors">Juntao He, Baxi Chong, <strong>Jianfeng Lin</strong>, Zhaochen Xu, Hosain Bagheri, Esteban Flores, Daniel I. Goldman</p>
+              <p>Foot-contact feedback adjusts vertical body undulation to improve multi-legged locomotion on rugged terrain.</p>
+              <div class="paper-links"><a href="https://doi.org/10.1109/TRO.2025.3593133">Paper</a><a href="https://arxiv.org/abs/2411.07183">arXiv</a><a href="https://youtu.be/nWu7U5xZqbo?si=EVVCiSkDPK3W66qj">Video</a></div>
             </div>
-          </details>
+          </article>
+
+          <article class="paper">
+            <a class="paper-media" href="https://ieeexplore.ieee.org/document/11127656" aria-label="View paper: Addition of a peristaltic wave improves multi-legged locomotion performance on complex terrains">
+              <img src="images/publications/icra-2025-peristaltic-wave.png" alt="Peristaltic robot prototype, cable-driven mechanism, and diagrams of linear and rotational motion" width="483" height="413" loading="lazy" decoding="async">
+            </a>
+            <div class="paper-copy">
+              <div class="paper-meta"><span>IEEE ICRA</span><time datetime="2025">2025</time></div>
+              <h3><a href="https://ieeexplore.ieee.org/document/11127656">Addition of a peristaltic wave improves multi-legged locomotion performance on complex terrains</a></h3>
+              <p class="authors">Massimiliano Iaschi, Baxi Chong, Tianyu Wang, <strong>Jianfeng Lin</strong>, Juntao He, Daniel Soto, Zhaochen Xu, Daniel I. Goldman</p>
+              <p>Combining peristaltic and vertical body waves improves obstacle climbing and traversal on complex terrain.</p>
+              <div class="paper-links"><a href="https://ieeexplore.ieee.org/document/11127656">Paper</a><a href="https://arxiv.org/abs/2410.01046">arXiv</a><a href="https://www.youtube.com/watch?v=jvIaCZjSNgE&amp;feature=youtu.be">Video</a></div>
+            </div>
+          </article>
+
+          <article class="paper">
+            <a class="paper-media" href="https://journals.sagepub.com/doi/10.1089/soro.2022.0212" aria-label="View paper: Bioinspired bidirectional stiffening soft actuators enable versatile and robust grasping">
+              <img src="images/publications/soft-robotics-actuator.png" alt="Soft actuator cross sections and exploded diagrams showing its chambers, bone-like rigid chain, tendons, and pre-tension mechanism" width="2035" height="1345" loading="lazy" decoding="async">
+            </a>
+            <div class="paper-copy">
+              <div class="paper-meta"><span>Soft Robotics</span><time>2024</time></div>
+              <h3><a href="https://journals.sagepub.com/doi/10.1089/soro.2022.0212">Bioinspired bidirectional stiffening soft actuators enable versatile and robust grasping</a></h3>
+              <p class="authors"><strong>Jianfeng Lin</strong>, Jingwei Ke, Ruikang Xiao, Xiangtao Jiang, Miao Li, Xiaohui Xiao, Zhao Guo</p>
+              <p>A soft actuator combines bending and lateral stiffness control for versatile grasping.</p>
+              <div class="paper-links"><a href="https://journals.sagepub.com/doi/10.1089/soro.2022.0212">Paper</a><a href="https://youtu.be/8gXsPTAAeGc?si=T8vcGnWr35OJqvCQ">Video</a></div>
+            </div>
+          </article>
+
+          <article class="paper">
+            <a class="paper-media" href="https://ieeexplore.ieee.org/abstract/document/10341730" aria-label="View paper: Design and stiffness analysis of a bio-inspired soft actuator with bi-direction tunable stiffness property">
+              <img src="images/publications/iros-2023-soft-actuator.png" alt="Finger-inspired tendon and bone-like mechanisms, hybrid air-tendon actuation, and a soft actuator prototype" width="588" height="609" loading="lazy" decoding="async">
+            </a>
+            <div class="paper-copy">
+              <div class="paper-meta"><span>IEEE IROS</span><time datetime="2023">2023</time></div>
+              <h3><a href="https://ieeexplore.ieee.org/abstract/document/10341730">Design and stiffness analysis of a bio-inspired soft actuator with bi-direction tunable stiffness property</a></h3>
+              <p class="authors"><strong>Jianfeng Lin</strong>, Ruikang Xiao, Zhao Guo</p>
+              <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/10341730">Paper</a><a href="https://arxiv.org/abs/2205.07219">arXiv</a></div>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="section" id="experience" aria-labelledby="experience-title">
         <div class="section-label"><h2 class="section-title" id="experience-title">Experience</h2></div>
         <div class="section-body row-list">
-          <article><time>2024 — present</time><div><h3>Graduate Research Assistant</h3><p><a href="https://crablab.gatech.edu/">Complex Rheology and Biomechanics Lab</a> · Georgia Tech</p><p>Advisor: Daniel I. Goldman</p></div></article>
-          <article><time>2023 — 2026</time><div><h3>Graduate Teaching Assistant</h3><p>School of Physics · Georgia Tech</p><p>PHYS 2211 — Introductory Physics I</p></div></article>
-          <article><time>2022 — 2023</time><div><h3>Research Assistant</h3><p><a href="https://dlg.is.mpg.de/">Dynamic Locomotion Group</a> · Max Planck Institute for Intelligent Systems</p><p>Advisor: Alexander Badri-Spröwitz</p></div></article>
+          <article><time>2023 — present</time><div><h3>Graduate Research Assistant</h3><p><a href="https://crablab.gatech.edu/">Complex Rheology and Biomechanics Lab</a> · Georgia Tech</p><p>Advisor: Daniel I. Goldman</p></div></article>
+          <article><time>2022 — 2023</time><div><h3>Research Assistant</h3><p><a href="https://is.mpg.de/dlg/person/sprowitz">Dynamic Locomotion Group</a> · Max Planck Institute for Intelligent Systems</p><p>Advisor: <a href="https://scholar.google.com/citations?user=JCHb-YMAAAAJ&amp;hl=en">Alexander Badri-Spröwitz</a></p></div></article>
           <article><time>2020 — 2023</time><div><h3>Undergraduate Research Assistant</h3><p>Exoskeleton Lab · Wuhan University</p><p>Advisor: Zhao Guo</p></div></article>
-        </div>
-      </section>
-
-      <section class="section" id="recognition" aria-labelledby="recognition-title">
-        <div class="section-label"><h2 class="section-title" id="recognition-title">Recognition</h2></div>
-        <div class="section-body recognition-grid">
-          <div>
-            <h3>Selected honors</h3>
-            <ul>
-              <li><span>Georgia Tech School of Physics Travel Grant</span><time>2026</time></li>
-              <li><span>QBioS Travel Award</span><time>2025</time></li>
-              <li><span>Best Design Award, ICRA Mechanical Intelligence Workshop</span><time>2025</time></li>
-              <li><span>Second Prize, National College Mechanical Innovation Competition of China</span><time>2022</time></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Academic service</h3>
-            <ul>
-              <li><span>Organizer, Robophysics Mini Boot Camp</span><time>2024–25</time></li>
-              <li><span>Reviewer, Scientific Reports and IEEE RA-L</span><time>2025–</time></li>
-            </ul>
-          </div>
         </div>
       </section>
 
       <section class="contact" aria-labelledby="contact-title">
         <div><h2 class="section-title" id="contact-title">Contact</h2><p class="contact-email">jianf.lin@gatech.edu</p></div>
-        <a href="mailto:jianf.lin@gatech.edu">Send an email ↗</a>
+        <a href="mailto:jianf.lin@gatech.edu">Send an email</a>
       </section>
     </main>
 
@@ -217,13 +221,38 @@
       <p>Last updated October 2026 · Atlanta, GA</p>
     </footer>
     <script>
+      const videos = document.querySelectorAll('.highlight-video, .publication-video');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const loadVideo = (video) => {
+        const source = video.querySelector('source[data-src]');
+        if (source) {
+          source.src = source.dataset.src;
+          source.removeAttribute('data-src');
+          video.load();
+        }
+      };
       // Keep playback optional for visitors who prefer reduced motion.
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        document.querySelectorAll('.highlight-video').forEach((video) => {
+      if (reducedMotion) {
+        videos.forEach((video) => {
           video.autoplay = false;
           video.controls = true;
           video.pause();
         });
+      }
+      if ('IntersectionObserver' in window) {
+        const videoObserver = new IntersectionObserver((entries) => {
+          entries.forEach(({ target: video, isIntersecting }) => {
+            if (isIntersecting) {
+              loadVideo(video);
+              if (!reducedMotion) video.play().catch(() => {});
+            } else {
+              video.pause();
+            }
+          });
+        }, { rootMargin: '150px 0px', threshold: 0 });
+        videos.forEach((video) => videoObserver.observe(video));
+      } else {
+        videos.forEach(loadVideo);
       }
     </script>
   </body>
